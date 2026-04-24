@@ -82,21 +82,21 @@ const Navbar = () => {
           </a>
         </div>
 
-        <button
-          aria-label="Menu"
-          onClick={() => setOpen((o) => !o)}
-          className="md:hidden grid h-11 w-11 place-items-center rounded-full bg-navy-light text-foreground"
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <LanguageToggle />
+          <button
+            aria-label="Menu"
+            onClick={() => setOpen((o) => !o)}
+            className="grid h-11 w-11 place-items-center rounded-full bg-navy-light text-foreground"
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
       {open && (
         <div className="md:hidden bg-navy-deep/95 backdrop-blur-xl border-t border-border animate-slide-down">
           <nav className="container mx-auto flex flex-col px-4 py-6 gap-1">
-            <div className="mb-4 flex justify-start">
-              <LanguageToggle />
-            </div>
             {links.map((l) => (
               <NavLink
                 key={l.to}
