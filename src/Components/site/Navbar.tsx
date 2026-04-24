@@ -9,6 +9,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const loc = useLocation();
+  const logoPath = `${import.meta.env.BASE_URL}logos/MAA_AMBIKA_Logo_Horizontal_Transparent.svg`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -37,7 +38,7 @@ const Navbar = () => {
           <div className="flex items-center min-h-[88px] md:min-h-[112px]">
             <div className="flex items-center pl-3 pr-4 py-3">
               <img
-                src="/logos/MAA_AMBIKA_Logo_Horizontal_Transparent.svg"
+                src={logoPath}
                 alt="Maa Ambika Traders Logo"
                 className="h-[72px] md:h-[92px] w-auto object-contain object-left"
               />
@@ -93,6 +94,9 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-navy-deep/95 backdrop-blur-xl border-t border-border animate-slide-down">
           <nav className="container mx-auto flex flex-col px-4 py-6 gap-1">
+            <div className="mb-4 flex justify-start">
+              <LanguageToggle />
+            </div>
             {links.map((l) => (
               <NavLink
                 key={l.to}
@@ -107,8 +111,7 @@ const Navbar = () => {
                 {l.label}
               </NavLink>
             ))}
-            <div className="mt-4 flex items-center justify-between">
-              <LanguageToggle />
+            <div className="mt-4 flex items-center justify-start">
               <a
                 href="tel:9422843028"
                 className="inline-flex items-center gap-2 rounded-full gradient-saffron px-5 py-2.5 text-sm font-semibold text-primary-foreground"

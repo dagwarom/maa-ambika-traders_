@@ -18,6 +18,7 @@ const Index = () => {
   const cats = [cement, pipes, sanitary, hardware];
   const whyIcons = [ShieldCheck, Tags, Truck, PackageCheck];
   const awardIcons = [Trophy, Medal, BadgeCheck, Star];
+  const heroBadgePath = `${import.meta.env.BASE_URL}logos/MAA_AMBIKA_Icon_Badge.svg`;
   const tickerMessages = [
     "We have three shops available for rent. Interested customers may contact us.",
     "आमच्याकडे भाड्याने देण्यासाठी तीन दुकाने उपलब्ध आहेत. इच्छुकांनी कृपया संपर्क साधावा.",
@@ -57,7 +58,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-28 md:py-40 max-w-5xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-saffron/40 bg-navy-deep/40 px-4 py-1.5 text-xs font-medium text-saffron backdrop-blur animate-fade-in">
             <img
-              src="/logos/MAA_AMBIKA_Icon_Badge.svg"
+              src={heroBadgePath}
               alt="Maa Ambika Traders Logo"
               className="h-9 w-9 object-contain"
             />

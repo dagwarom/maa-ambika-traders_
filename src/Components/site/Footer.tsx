@@ -5,13 +5,14 @@ import { useLang } from "@/i18n/LanguageContext";
 const Footer = () => {
   const { t, lang } = useLang();
   const mr = lang === "mr" ? "font-marathi" : "";
+  const logoPath = `${import.meta.env.BASE_URL}logos/MAA_AMBIKA_Logo_Horizontal_Transparent.svg`;
   return (
     <footer className="bg-navy-deep border-t border-border">
       <div className="container mx-auto px-4 py-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-1">
           <div className="flex items-center">
             <img
-              src="/logos/MAA_AMBIKA_Logo_Horizontal_Transparent.svg"
+              src={logoPath}
               alt="Maa Ambika Traders Logo"
               className="h-16 md:h-20 w-auto object-contain object-left"
             />
