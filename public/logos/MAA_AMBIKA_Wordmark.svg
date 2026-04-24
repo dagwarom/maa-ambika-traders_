@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="280" viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
+<title>Maa Ambika Traders — Wordmark Only</title>
+<defs>
+  <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#F5D78E"/>
+    <stop offset="40%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#1A1008"/>
+    <stop offset="100%" style="stop-color:#0A0A0A"/>
+  </linearGradient>
+</defs>
+
+<rect width="800" height="280" fill="url(#bgGrad)" rx="12"/>
+
+<!-- Decorative top bar -->
+<line x1="60" y1="30" x2="740" y2="30" stroke="url(#goldGrad)" stroke-width="1" opacity="0.5"/>
+
+<!-- Main text -->
+<text x="400" y="110" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" letter-spacing="12" fill="url(#goldGrad)">MAA AMBIKA</text>
+<text x="400" y="185" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" letter-spacing="16" fill="url(#goldGrad)">TRADERS</text>
+
+<!-- Tagline -->
+<text x="400" y="222" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="5" fill="#C8860A">BUILDING TRUST · TRADING EXCELLENCE</text>
+
+<!-- Decorative bottom -->
+<line x1="60" y1="248" x2="740" y2="248" stroke="url(#goldGrad)" stroke-width="1"/>
+<circle cx="400" cy="248" r="4" fill="url(#goldGrad)"/>
+<circle cx="380" cy="248" r="2.5" fill="#C8860A"/>
+<circle cx="420" cy="248" r="2.5" fill="#C8860A"/>
+</svg>

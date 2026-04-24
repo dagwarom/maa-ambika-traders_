@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+<title>Maa Ambika Traders — Horizontal Logo</title>
+<defs>
+  <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#F5D78E"/>
+    <stop offset="40%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+  <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#F7E09A"/>
+    <stop offset="50%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#1A1008"/>
+    <stop offset="100%" style="stop-color:#0A0A0A"/>
+  </linearGradient>
+</defs>
+
+<rect width="900" height="260" fill="url(#bgGrad)" rx="12"/>
+
+<!-- Icon: Building (scaled small) -->
+<rect x="40" y="90" width="90" height="68" fill="url(#goldGrad2)" rx="2"/>
+<rect x="50" y="98" width="12" height="10" fill="#1A1008" rx="1"/>
+<rect x="68" y="98" width="12" height="10" fill="#1A1008" rx="1"/>
+<rect x="86" y="98" width="12" height="10" fill="#1A1008" rx="1"/>
+<rect x="104" y="98" width="12" height="10" fill="#1A1008" rx="1"/>
+<rect x="50" y="116" width="12" height="10" fill="#1A1008" rx="1"/>
+<rect x="68" y="116" width="12" height="10" fill="#1A1008" rx="1"/>
+<rect x="86" y="116" width="12" height="10" fill="#1A1008" rx="1"/>
+<rect x="104" y="116" width="12" height="10" fill="#1A1008" rx="1"/>
+<rect x="72" y="138" width="20" height="22" fill="#1A1008" rx="2"/>
+<rect x="40" y="84" width="90" height="8" fill="url(#goldGrad)" rx="1"/>
+<rect x="50" y="72" width="9" height="14" fill="url(#goldGrad2)" rx="1"/>
+<rect x="68" y="76" width="7" height="10" fill="url(#goldGrad2)" rx="1"/>
+<rect x="86" y="74" width="8" height="12" fill="url(#goldGrad2)" rx="1"/>
+<rect x="104" y="72" width="9" height="14" fill="url(#goldGrad2)" rx="1"/>
+
+<!-- Icon: Crane (scaled small) -->
+<rect x="144" y="42" width="10" height="122" fill="url(#goldGrad2)" rx="1"/>
+<line x1="144" y1="50" x2="154" y2="68" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="154" y1="50" x2="144" y2="68" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="144" y1="68" x2="154" y2="86" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="154" y1="68" x2="144" y2="86" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="144" y1="86" x2="154" y2="104" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="154" y1="86" x2="144" y2="104" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="144" y1="104" x2="154" y2="122" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="154" y1="104" x2="144" y2="122" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="144" y1="122" x2="154" y2="140" stroke="#D4A017" stroke-width="1.5"/>
+<line x1="154" y1="122" x2="144" y2="140" stroke="#D4A017" stroke-width="1.5"/>
+<rect x="90" y="38" width="96" height="7" fill="url(#goldGrad2)" rx="1"/>
+<rect x="148" y="38" width="34" height="7" fill="url(#goldGrad2)" rx="1"/>
+<rect x="140" y="43" width="14" height="12" fill="url(#goldGrad)" rx="1"/>
+<rect x="106" y="36" width="10" height="5" fill="#C8860A" rx="1"/>
+<line x1="111" y1="41" x2="111" y2="72" stroke="#D4A017" stroke-width="1.5" stroke-dasharray="3,2"/>
+<path d="M108 72 Q108 79 111 79 Q114 79 114 72" fill="none" stroke="#D4A017" stroke-width="2"/>
+<rect x="170" y="40" width="12" height="9" fill="#A86A00" rx="1"/>
+<line x1="144" y1="164" x2="136" y2="180" stroke="#D4A017" stroke-width="2"/>
+<line x1="154" y1="164" x2="162" y2="180" stroke="#D4A017" stroke-width="2"/>
+<line x1="134" y1="180" x2="164" y2="180" stroke="#D4A017" stroke-width="2"/>
+
+<!-- Ground line -->
+<line x1="30" y1="180" x2="200" y2="180" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+<!-- Vertical divider -->
+<line x1="230" y1="40" x2="230" y2="220" stroke="url(#goldGrad)" stroke-width="1" opacity="0.5"/>
+
+<!-- Text right side -->
+<text x="270" y="120" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" letter-spacing="8" fill="url(#goldGrad)">MAA AMBIKA</text>
+<text x="270" y="175" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="50" font-weight="700" letter-spacing="12" fill="url(#goldGrad)">TRADERS</text>
+<text x="272" y="205" text-anchor="start" font-family="Georgia, serif" font-size="12" letter-spacing="4" fill="#C8860A">BUILDING TRUST · TRADING EXCELLENCE</text>
+
+</svg>

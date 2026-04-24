@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="360" viewBox="0 0 1080 360" xmlns="http://www.w3.org/2000/svg">
+<title>Maa Ambika Traders — Horizontal Logo Transparent</title>
+
+<defs>
+  <linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#F7E09A"/>
+    <stop offset="50%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+  <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#F5D78E"/>
+    <stop offset="50%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+</defs>
+
+<!-- ===================== BUILDING ===================== -->
+<!-- Roof vents -->
+<rect x="58"  y="74"  width="18" height="28" fill="url(#g1)" rx="2"/>
+<rect x="90"  y="84"  width="14" height="18" fill="url(#g1)" rx="2"/>
+<rect x="124" y="78"  width="16" height="24" fill="url(#g1)" rx="2"/>
+<rect x="160" y="74"  width="18" height="28" fill="url(#g1)" rx="2"/>
+
+<!-- Rooftop bar -->
+<rect x="44" y="100" width="170" height="14" fill="url(#g2)" rx="2"/>
+
+<!-- Main building body -->
+<rect x="44" y="112" width="170" height="118" fill="url(#g1)" rx="2"/>
+
+<!-- Windows row 1 -->
+<rect x="58"  y="128" width="22" height="18" fill="#0A0804" rx="2"/>
+<rect x="88"  y="128" width="22" height="18" fill="#0A0804" rx="2"/>
+<rect x="118" y="128" width="22" height="18" fill="#0A0804" rx="2"/>
+<rect x="148" y="128" width="22" height="18" fill="#0A0804" rx="2"/>
+<rect x="178" y="128" width="22" height="18" fill="#0A0804" rx="2"/>
+
+<!-- Windows row 2 -->
+<rect x="58"  y="158" width="22" height="18" fill="#0A0804" rx="2"/>
+<rect x="88"  y="158" width="22" height="18" fill="#0A0804" rx="2"/>
+<rect x="118" y="158" width="22" height="18" fill="#0A0804" rx="2"/>
+<rect x="148" y="158" width="22" height="18" fill="#0A0804" rx="2"/>
+<rect x="178" y="158" width="22" height="18" fill="#0A0804" rx="2"/>
+
+<!-- Door -->
+<rect x="110" y="188" width="40" height="44" fill="#0A0804" rx="3"/>
+
+<!-- ===================== CRANE ===================== -->
+<!-- Crane mast -->
+<rect x="242" y="44" width="18" height="196" fill="url(#g1)" rx="2"/>
+
+<!-- Cross braces -->
+<line x1="242" y1="54"  x2="260" y2="78"  stroke="#D4A017" stroke-width="2.5"/>
+<line x1="260" y1="54"  x2="242" y2="78"  stroke="#D4A017" stroke-width="2.5"/>
+<line x1="242" y1="78"  x2="260" y2="102" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="260" y1="78"  x2="242" y2="102" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="242" y1="102" x2="260" y2="126" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="260" y1="102" x2="242" y2="126" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="242" y1="126" x2="260" y2="150" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="260" y1="126" x2="242" y2="150" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="242" y1="150" x2="260" y2="174" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="260" y1="150" x2="242" y2="174" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="242" y1="174" x2="260" y2="198" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="260" y1="174" x2="242" y2="198" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="242" y1="198" x2="260" y2="222" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="260" y1="198" x2="242" y2="222" stroke="#D4A017" stroke-width="2.5"/>
+
+<!-- Jib boom (left arm) -->
+<rect x="148" y="38" width="152" height="12" fill="url(#g1)" rx="2"/>
+<!-- Counter jib (right) -->
+<rect x="258" y="38" width="58" height="12" fill="url(#g1)" rx="2"/>
+<!-- Cab -->
+<rect x="234" y="46" width="30" height="22" fill="#F5D78E" rx="2"/>
+
+<!-- Trolley -->
+<rect x="178" y="34" width="20" height="10" fill="#A86A00" rx="2"/>
+<!-- Hook cable dashed -->
+<line x1="188" y1="44" x2="188" y2="56"  stroke="#D4A017" stroke-width="2" stroke-dasharray="5,3"/>
+<line x1="188" y1="60" x2="188" y2="72"  stroke="#D4A017" stroke-width="2" stroke-dasharray="5,3"/>
+<line x1="188" y1="76" x2="188" y2="88"  stroke="#D4A017" stroke-width="2" stroke-dasharray="5,3"/>
+<!-- Hook arc -->
+<path d="M181 90 Q181 104 188 104 Q195 104 195 90" fill="none" stroke="#D4A017" stroke-width="2.5"/>
+
+<!-- Counterweight -->
+<rect x="302" y="40" width="26" height="18" fill="#A86A00" rx="2"/>
+
+<!-- Crane legs -->
+<line x1="242" y1="240" x2="224" y2="268" stroke="#D4A017" stroke-width="3.5"/>
+<line x1="260" y1="240" x2="278" y2="268" stroke="#D4A017" stroke-width="3.5"/>
+<line x1="222" y1="268" x2="280" y2="268" stroke="#D4A017" stroke-width="3.5"/>
+
+<!-- Ground line -->
+<line x1="34" y1="268" x2="340" y2="268" stroke="url(#g2)" stroke-width="2.5"/>
+
+<!-- ===================== VERTICAL DIVIDER ===================== -->
+<line x1="360" y1="40" x2="360" y2="300" stroke="#C8860A" stroke-width="1.2" opacity="0.7"/>
+
+<!-- ===================== TEXT ===================== -->
+<!-- MAA AMBIKA -->
+<text x="720" y="126"
+  text-anchor="middle"
+  font-family="Georgia, 'Times New Roman', serif"
+  font-size="72"
+  font-weight="700"
+  letter-spacing="10"
+  fill="url(#g2)">MAA AMBIKA</text>
+
+<!-- TRADERS -->
+<text x="720" y="208"
+  text-anchor="middle"
+  font-family="Georgia, 'Times New Roman', serif"
+  font-size="86"
+  font-weight="700"
+  letter-spacing="14"
+  fill="url(#g2)">TRADERS</text>
+
+<!-- Tagline -->
+<text x="720" y="244"
+  text-anchor="middle"
+  font-family="Georgia, serif"
+  font-size="17"
+  letter-spacing="4"
+  fill="#C8860A">BUILDING TRUST  ·  TRADING EXCELLENCE</text>
+
+<!-- Divider line -->
+<line x1="390" y1="265" x2="1050" y2="265" stroke="url(#g2)" stroke-width="1.5"/>
+<circle cx="720" cy="265" r="5"   fill="#D4A017"/>
+<circle cx="696" cy="265" r="3"   fill="#C8860A"/>
+<circle cx="744" cy="265" r="3"   fill="#C8860A"/>
+
+<!-- EST 2010 -->
+<text x="720" y="292"
+  text-anchor="middle"
+  font-family="Georgia, serif"
+  font-size="15"
+  letter-spacing="4"
+  fill="#8B6000">EST. 2010</text>
+
+</svg>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+<title>Maa Ambika Traders — Icon Only</title>
+<defs>
+  <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#F5D78E"/>
+    <stop offset="40%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+  <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#F7E09A"/>
+    <stop offset="50%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#1A1008"/>
+    <stop offset="100%" style="stop-color:#0A0A0A"/>
+  </linearGradient>
+</defs>
+
+<!-- Circle background -->
+<circle cx="250" cy="250" r="248" fill="url(#bgGrad)"/>
+<circle cx="250" cy="250" r="244" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+
+<!-- Building -->
+<rect x="80" y="225" width="170" height="120" fill="url(#goldGrad2)" rx="3"/>
+<!-- Windows row 1 -->
+<rect x="96" y="238" width="24" height="20" fill="#1A1008" rx="2"/>
+<rect x="130" y="238" width="24" height="20" fill="#1A1008" rx="2"/>
+<rect x="164" y="238" width="24" height="20" fill="#1A1008" rx="2"/>
+<rect x="198" y="238" width="24" height="20" fill="#1A1008" rx="2"/>
+<!-- Windows row 2 -->
+<rect x="96" y="270" width="24" height="20" fill="#1A1008" rx="2"/>
+<rect x="130" y="270" width="24" height="20" fill="#1A1008" rx="2"/>
+<rect x="164" y="270" width="24" height="20" fill="#1A1008" rx="2"/>
+<rect x="198" y="270" width="24" height="20" fill="#1A1008" rx="2"/>
+<!-- Door -->
+<rect x="147" y="306" width="36" height="40" fill="#1A1008" rx="3"/>
+<!-- Rooftop -->
+<rect x="80" y="213" width="170" height="14" fill="url(#goldGrad)" rx="2"/>
+<!-- Vents -->
+<rect x="98" y="192" width="16" height="23" fill="url(#goldGrad2)" rx="2"/>
+<rect x="130" y="200" width="12" height="15" fill="url(#goldGrad2)" rx="2"/>
+<rect x="158" y="196" width="14" height="19" fill="url(#goldGrad2)" rx="2"/>
+<rect x="192" y="192" width="16" height="23" fill="url(#goldGrad2)" rx="2"/>
+
+<!-- Crane mast -->
+<rect x="310" y="110" width="18" height="245" fill="url(#goldGrad2)" rx="2"/>
+<line x1="310" y1="124" x2="328" y2="156" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="328" y1="124" x2="310" y2="156" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="310" y1="156" x2="328" y2="188" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="328" y1="156" x2="310" y2="188" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="310" y1="188" x2="328" y2="220" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="328" y1="188" x2="310" y2="220" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="310" y1="220" x2="328" y2="252" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="328" y1="220" x2="310" y2="252" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="310" y1="252" x2="328" y2="284" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="328" y1="252" x2="310" y2="284" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="310" y1="284" x2="328" y2="316" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="328" y1="284" x2="310" y2="316" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="310" y1="316" x2="328" y2="345" stroke="#D4A017" stroke-width="2.5"/>
+<line x1="328" y1="316" x2="310" y2="345" stroke="#D4A017" stroke-width="2.5"/>
+<!-- Jib boom -->
+<rect x="200" y="104" width="180" height="12" fill="url(#goldGrad2)" rx="2"/>
+<!-- Counter jib -->
+<rect x="324" y="104" width="60" height="12" fill="url(#goldGrad2)" rx="2"/>
+<!-- Cab -->
+<rect x="302" y="112" width="26" height="22" fill="url(#goldGrad)" rx="2"/>
+<!-- Trolley -->
+<rect x="246" y="100" width="18" height="9" fill="#C8860A" rx="2"/>
+<!-- Cable -->
+<line x1="255" y1="109" x2="255" y2="160" stroke="#D4A017" stroke-width="2" stroke-dasharray="4,2"/>
+<!-- Hook -->
+<path d="M249 160 Q249 172 255 172 Q261 172 261 160" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+<!-- Counterweight -->
+<rect x="370" y="108" width="20" height="16" fill="#A86A00" rx="2"/>
+<!-- Base legs -->
+<line x1="310" y1="355" x2="296" y2="385" stroke="#D4A017" stroke-width="3"/>
+<line x1="328" y1="355" x2="342" y2="385" stroke="#D4A017" stroke-width="3"/>
+<line x1="294" y1="385" x2="344" y2="385" stroke="#D4A017" stroke-width="3"/>
+
+<!-- Ground line -->
+<line x1="70" y1="385" x2="430" y2="385" stroke="url(#goldGrad)" stroke-width="2"/>
+
+</svg>
