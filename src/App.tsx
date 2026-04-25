@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { Capacitor } from "@capacitor/core";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,9 +9,11 @@ import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
 import Products from "./pages/Products.tsx";
 import Contact from "./pages/Contact.tsx";
+import AdminRates from "./pages/AdminRates.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
+const isNativeApp = Capacitor.isNativePlatform();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -18,12 +21,13 @@ const App = () => (
       <LanguageProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <BrowserRouter basename={isNativeApp ? "/" : import.meta.env.BASE_URL}>
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={isNativeApp ? <Navigate to="/admin-rates" replace /> : <Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/admin-rates" element={<AdminRates />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

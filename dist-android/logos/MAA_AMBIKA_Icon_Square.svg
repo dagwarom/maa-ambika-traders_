@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<title>Maa Ambika Traders — Favicon / App Icon</title>
+<defs>
+  <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#F5D78E"/>
+    <stop offset="40%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+  <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#F7E09A"/>
+    <stop offset="50%" style="stop-color:#D4A017"/>
+    <stop offset="100%" style="stop-color:#8B6000"/>
+  </linearGradient>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#1A1008"/>
+    <stop offset="100%" style="stop-color:#080808"/>
+  </linearGradient>
+</defs>
+
+<!-- Background square -->
+<rect width="512" height="512" fill="url(#bgGrad)" rx="80"/>
+<!-- Gold border -->
+<rect x="8" y="8" width="496" height="496" fill="none" stroke="url(#goldGrad)" stroke-width="4" rx="76"/>
+
+<!-- Building -->
+<rect x="96" y="240" width="200" height="150" fill="url(#goldGrad2)" rx="4"/>
+<rect x="112" y="258" width="30" height="26" fill="#1A1008" rx="3"/>
+<rect x="154" y="258" width="30" height="26" fill="#1A1008" rx="3"/>
+<rect x="196" y="258" width="30" height="26" fill="#1A1008" rx="3"/>
+<rect x="238" y="258" width="30" height="26" fill="#1A1008" rx="3"/>
+<rect x="112" y="298" width="30" height="26" fill="#1A1008" rx="3"/>
+<rect x="154" y="298" width="30" height="26" fill="#1A1008" rx="3"/>
+<rect x="196" y="298" width="30" height="26" fill="#1A1008" rx="3"/>
+<rect x="238" y="298" width="30" height="26" fill="#1A1008" rx="3"/>
+<rect x="174" y="348" width="44" height="44" fill="#1A1008" rx="4"/>
+<rect x="96" y="224" width="200" height="18" fill="url(#goldGrad)" rx="3"/>
+<rect x="114" y="196" width="20" height="30" fill="url(#goldGrad2)" rx="2"/>
+<rect x="154" y="208" width="16" height="18" fill="url(#goldGrad2)" rx="2"/>
+<rect x="194" y="200" width="18" height="26" fill="url(#goldGrad2)" rx="2"/>
+<rect x="238" y="196" width="20" height="30" fill="url(#goldGrad2)" rx="2"/>
+
+<!-- Crane -->
+<rect x="330" y="100" width="22" height="296" fill="url(#goldGrad2)" rx="3"/>
+<line x1="330" y1="118" x2="352" y2="156" stroke="#D4A017" stroke-width="3"/>
+<line x1="352" y1="118" x2="330" y2="156" stroke="#D4A017" stroke-width="3"/>
+<line x1="330" y1="156" x2="352" y2="194" stroke="#D4A017" stroke-width="3"/>
+<line x1="352" y1="156" x2="330" y2="194" stroke="#D4A017" stroke-width="3"/>
+<line x1="330" y1="194" x2="352" y2="232" stroke="#D4A017" stroke-width="3"/>
+<line x1="352" y1="194" x2="330" y2="232" stroke="#D4A017" stroke-width="3"/>
+<line x1="330" y1="232" x2="352" y2="270" stroke="#D4A017" stroke-width="3"/>
+<line x1="352" y1="232" x2="330" y2="270" stroke="#D4A017" stroke-width="3"/>
+<line x1="330" y1="270" x2="352" y2="308" stroke="#D4A017" stroke-width="3"/>
+<line x1="352" y1="270" x2="330" y2="308" stroke="#D4A017" stroke-width="3"/>
+<line x1="330" y1="308" x2="352" y2="346" stroke="#D4A017" stroke-width="3"/>
+<line x1="352" y1="308" x2="330" y2="346" stroke="#D4A017" stroke-width="3"/>
+<line x1="330" y1="346" x2="352" y2="384" stroke="#D4A017" stroke-width="3"/>
+<line x1="352" y1="346" x2="330" y2="384" stroke="#D4A017" stroke-width="3"/>
+<rect x="170" y="92" width="222" height="16" fill="url(#goldGrad2)" rx="3"/>
+<rect x="342" y="92" width="80" height="16" fill="url(#goldGrad2)" rx="3"/>
+<rect x="318" y="104" width="34" height="28" fill="url(#goldGrad)" rx="3"/>
+<rect x="210" y="86" width="24" height="12" fill="#C8860A" rx="2"/>
+<line x1="222" y1="98" x2="222" y2="162" stroke="#D4A017" stroke-width="2" stroke-dasharray="6,3"/>
+<path d="M214 162 Q214 178 222 178 Q230 178 230 162" fill="none" stroke="#D4A017" stroke-width="3"/>
+<rect x="408" y="96" width="28" height="22" fill="#A86A00" rx="2"/>
+<line x1="330" y1="396" x2="310" y2="432" stroke="#D4A017" stroke-width="4"/>
+<line x1="352" y1="396" x2="372" y2="432" stroke="#D4A017" stroke-width="4"/>
+<line x1="306" y1="432" x2="376" y2="432" stroke="#D4A017" stroke-width="4"/>
+
+<!-- Ground line -->
+<line x1="76" y1="432" x2="440" y2="432" stroke="url(#goldGrad)" stroke-width="3"/>
+
+<!-- Bottom text: abbreviated -->
+<text x="256" y="484" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" letter-spacing="8" fill="url(#goldGrad)">MAT</text>
+
+</svg>

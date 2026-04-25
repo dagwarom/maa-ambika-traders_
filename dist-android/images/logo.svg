@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="960" viewBox="0 0 800 960" xmlns="http://www.w3.org/2000/svg">
+<title>Maa Ambika Traders — Full Logo Light/Transparent</title>
+<defs>
+  <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#C8860A"/>
+    <stop offset="50%" style="stop-color:#A86A00"/>
+    <stop offset="100%" style="stop-color:#7A4D00"/>
+  </linearGradient>
+  <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#D4A017"/>
+    <stop offset="50%" style="stop-color:#A86A00"/>
+    <stop offset="100%" style="stop-color:#7A4D00"/>
+  </linearGradient>
+</defs>
+
+<!-- Background transparent - use white border/guide box -->
+<rect width="800" height="960" fill="white"/>
+
+<!-- Building base -->
+<rect x="260" y="305" width="190" height="130" fill="url(#goldGrad2)" rx="3"/>
+<!-- Building windows row 1 -->
+<rect x="276" y="320" width="26" height="22" fill="white" rx="2" opacity="0.9"/>
+<rect x="314" y="320" width="26" height="22" fill="white" rx="2" opacity="0.9"/>
+<rect x="352" y="320" width="26" height="22" fill="white" rx="2" opacity="0.9"/>
+<rect x="390" y="320" width="26" height="22" fill="white" rx="2" opacity="0.9"/>
+<!-- Building windows row 2 -->
+<rect x="276" y="356" width="26" height="22" fill="white" rx="2" opacity="0.9"/>
+<rect x="314" y="356" width="26" height="22" fill="white" rx="2" opacity="0.9"/>
+<rect x="352" y="356" width="26" height="22" fill="white" rx="2" opacity="0.9"/>
+<rect x="390" y="356" width="26" height="22" fill="white" rx="2" opacity="0.9"/>
+<!-- Building door -->
+<rect x="334" y="390" width="42" height="46" fill="white" rx="3" opacity="0.9"/>
+<!-- Rooftop bar -->
+<rect x="260" y="291" width="190" height="16" fill="url(#goldGrad)" rx="2"/>
+<!-- Rooftop vents -->
+<rect x="280" y="268" width="18" height="25" fill="url(#goldGrad2)" rx="2"/>
+<rect x="316" y="278" width="14" height="15" fill="url(#goldGrad2)" rx="2"/>
+<rect x="350" y="272" width="16" height="21" fill="url(#goldGrad2)" rx="2"/>
+<rect x="386" y="268" width="18" height="25" fill="url(#goldGrad2)" rx="2"/>
+
+<!-- Crane vertical mast -->
+<rect x="472" y="180" width="20" height="264" fill="url(#goldGrad2)" rx="2"/>
+<line x1="472" y1="195" x2="492" y2="230" stroke="#A86A00" stroke-width="3"/>
+<line x1="492" y1="195" x2="472" y2="230" stroke="#A86A00" stroke-width="3"/>
+<line x1="472" y1="230" x2="492" y2="265" stroke="#A86A00" stroke-width="3"/>
+<line x1="492" y1="230" x2="472" y2="265" stroke="#A86A00" stroke-width="3"/>
+<line x1="472" y1="265" x2="492" y2="300" stroke="#A86A00" stroke-width="3"/>
+<line x1="492" y1="265" x2="472" y2="300" stroke="#A86A00" stroke-width="3"/>
+<line x1="472" y1="300" x2="492" y2="335" stroke="#A86A00" stroke-width="3"/>
+<line x1="492" y1="300" x2="472" y2="335" stroke="#A86A00" stroke-width="3"/>
+<line x1="472" y1="335" x2="492" y2="370" stroke="#A86A00" stroke-width="3"/>
+<line x1="492" y1="335" x2="472" y2="370" stroke="#A86A00" stroke-width="3"/>
+<line x1="472" y1="370" x2="492" y2="405" stroke="#A86A00" stroke-width="3"/>
+<line x1="492" y1="370" x2="472" y2="405" stroke="#A86A00" stroke-width="3"/>
+<line x1="472" y1="405" x2="492" y2="435" stroke="#A86A00" stroke-width="3"/>
+<line x1="492" y1="405" x2="472" y2="435" stroke="#A86A00" stroke-width="3"/>
+<rect x="336" y="172" width="196" height="14" fill="url(#goldGrad2)" rx="2"/>
+<rect x="488" y="172" width="70" height="14" fill="url(#goldGrad2)" rx="2"/>
+<rect x="466" y="182" width="30" height="26" fill="#D4A017" rx="2"/>
+<rect x="384" y="168" width="20" height="10" fill="#7A4D00" rx="2"/>
+<line x1="394" y1="178" x2="394" y2="240" stroke="#A86A00" stroke-width="2.5" stroke-dasharray="5,2"/>
+<path d="M387 240 Q387 254 394 254 Q401 254 401 240" fill="none" stroke="#A86A00" stroke-width="3"/>
+<rect x="544" y="176" width="24" height="20" fill="#7A4D00" rx="2"/>
+<line x1="472" y1="444" x2="456" y2="480" stroke="#A86A00" stroke-width="3.5"/>
+<line x1="492" y1="444" x2="508" y2="480" stroke="#A86A00" stroke-width="3.5"/>
+<line x1="454" y1="480" x2="510" y2="480" stroke="#A86A00" stroke-width="3.5"/>
+<line x1="240" y1="480" x2="560" y2="480" stroke="url(#goldGrad)" stroke-width="2.5"/>
+
+<!-- Company name -->
+<text x="400" y="570" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" letter-spacing="10" fill="#8B6000">MAA AMBIKA</text>
+<text x="400" y="648" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" letter-spacing="14" fill="#7A4D00">TRADERS</text>
+<text x="400" y="692" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="5" fill="#A86A00">BUILDING TRUST · TRADING EXCELLENCE</text>
+<line x1="160" y1="716" x2="640" y2="716" stroke="url(#goldGrad)" stroke-width="1.5"/>
+<circle cx="400" cy="716" r="5" fill="#A86A00"/>
+<circle cx="376" cy="716" r="3" fill="#C8860A"/>
+<circle cx="424" cy="716" r="3" fill="#C8860A"/>
+<text x="400" y="750" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="4" fill="#A86A00">EST. 2010</text>
+
+</svg>

@@ -12,6 +12,13 @@ type RateState = {
   steelRates: RateRow[];
 };
 
+type LiveRatesResponse = {
+  success?: boolean;
+  message?: string;
+  cement?: Array<{ item?: string; price?: string | number }>;
+  steel?: Array<{ item?: string; price?: string | number }>;
+};
+
 const FALLBACK_RATES: RateState = {
   cementRates: [
     { item: "Ultratech", price: "₹300" },
@@ -28,30 +35,21 @@ const FALLBACK_RATES: RateState = {
 // Future workflow note:
 // Papa can send WhatsApp messages in a fixed rate-update format.
 // A Make/Zapier/WhatsApp Business API flow can write those values into Google Sheets.
-// This website can keep reading the published Google Sheet CSV without changing the UI layer.
-const SHEET_URLS = {
-  cement:
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQIRTg0c-ZsL7-Fd9MF8JWLUpY-x2G_jJZnAT7pLtjORVkj5BQbtft7-AgWtu72P6SB5ysnlo0ZRkDm/pub?gid=0&single=true&output=csv",
-  steel:
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQIRTg0c-ZsL7-Fd9MF8JWLUpY-x2G_jJZnAT7pLtjORVkj5BQbtft7-AgWtu72P6SB5ysnlo0ZRkDm/pub?gid=1013091558&single=true&output=csv",
-};
+// This website can keep reading the Apps Script GET endpoint without changing the UI layer.
+const API_URL = import.meta.env.VITE_RATES_UPDATE_API_URL?.trim();
 
-const parseCsv = (csv: string) =>
-  csv
-    .split(/\r?\n/)
-    .slice(1)
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .map((line) => {
-      const [rawItem = "", rawPrice = ""] = line
-        .split(",")
-        .map((value) => value.trim().replace(/^"|"$/g, "").replace(/\r/g, ""));
-      const item = rawItem.replace(/\s+/g, " ").trim().replace(/\s+mm$/i, "mm");
-      const priceValue = rawPrice.replace(/\s+/g, " ").trim();
-      const price = priceValue.startsWith("₹") ? priceValue : `₹${priceValue}`;
+const normalizeRates = (rows: LiveRatesResponse["cement"] = []) =>
+  rows
+    .map((row) => {
+      const item = String(row?.item ?? "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .replace(/\s+mm$/i, "mm");
+      const rawPrice = String(row?.price ?? "").replace(/\s+/g, " ").trim();
+      const price = rawPrice ? (rawPrice.startsWith("₹") ? rawPrice : `₹${rawPrice}`) : "";
       return { item, price };
     })
-    .filter((row) => row.item && row.price !== "₹");
+    .filter((row) => row.item && row.price);
 
 const RateCard = ({
   title,
@@ -112,23 +110,20 @@ const LiveRates = () => {
       try {
         setLoading(true);
         setError(false);
-
-        const [cementResponse, steelResponse] = await Promise.all([
-          fetch(SHEET_URLS.cement),
-          fetch(SHEET_URLS.steel),
-        ]);
-
-        if (!cementResponse.ok || !steelResponse.ok) {
-          throw new Error("Failed to fetch rates");
+        if (!API_URL) {
+          throw new Error("Live rates API URL is missing.");
         }
 
-        const [cementCsv, steelCsv] = await Promise.all([
-          cementResponse.text(),
-          steelResponse.text(),
-        ]);
+        const response = await fetch(API_URL);
+        if (!response.ok) {
+          throw new Error("Failed to fetch live rates.");
+        }
 
-        const cementRates = parseCsv(cementCsv);
-        const steelRates = parseCsv(steelCsv);
+        const data = (await response.json()) as LiveRatesResponse;
+        console.log("LiveRates API response:", data);
+
+        const cementRates = normalizeRates(data.cement);
+        const steelRates = normalizeRates(data.steel);
 
         if (!active) return;
 
@@ -137,8 +132,8 @@ const LiveRates = () => {
           steelRates,
         });
 
-        if (cementRates.length === 0 && steelRates.length === 0) {
-          console.error("LiveRates: no pricing rows found in Google Sheet CSV data.");
+        if (!data.success || (cementRates.length === 0 && steelRates.length === 0)) {
+          console.error("LiveRates: no pricing rows found in Apps Script GET data.", data);
         }
       } catch (err) {
         console.error("LiveRates: failed to fetch or parse live rates.", err);
@@ -175,11 +170,13 @@ const LiveRates = () => {
           <div className={`mt-12 rounded-3xl border border-border bg-navy-light/40 px-6 py-10 text-center text-foreground/80 ${mr}`}>
             {t.liveRates.loadingRates}
           </div>
-        ) : !hasAnyRates ? (
-          <div className={`mt-12 rounded-3xl border border-border bg-navy-light/40 px-6 py-10 text-center text-foreground/80 ${mr}`}>
-            {t.liveRates.noRatesFound}
-          </div>
         ) : (
+          <>
+            {!hasAnyRates ? (
+              <div className={`mt-12 rounded-3xl border border-border bg-navy-light/40 px-6 py-10 text-center text-foreground/80 ${mr}`}>
+                {t.liveRates.noRatesFound}
+              </div>
+            ) : null}
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
             <RateCard
               title={t.liveRates.todaysCementRates}
@@ -202,6 +199,7 @@ const LiveRates = () => {
               }}
             />
           </div>
+          </>
         )}
 
         {error && (
